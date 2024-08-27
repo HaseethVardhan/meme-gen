@@ -1,13 +1,131 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Karla";
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  background-image: linear-gradient(to right, #672280,#A626D3);
+  height: 65px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  column-gap: 10px;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-weight: bold;
+  font-size: 21px;
+  margin: 0;
+  color: white;
+  letter-spacing: -2px;
+}
+
+nav > img{
+  object-fit: contain;
+  height: 50%;
+  padding-left: 25px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 480px;
+  row-gap: 10px;
+}
+
+label{
+  font-weight: 500;
+  font-size: 14px;
+  color: #374151;
+}
+
+input{
+  height: 30px;
+  width: 222px;
+  border: 0.82px solid #D1D5DB;
+  border-radius: 5px;
+}
+
+.incon1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.incon{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+}
+
+.con{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button{
+  height: 40px;
+  background-image: linear-gradient(to right, #672280,#A626D3);
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+  letter-spacing: -1px;
+}
+
+.imgcon{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.imgcon > img{
+  max-width: 480px;
+  width: 90%;
+  object-fit: contain;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.top, .bottom{
+  position: absolute;
+  font-family: "Anton";
+  color: white;
+  font-size: 32px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+}
+
+.top{
+  top: 5px;
+}
+
+.bottom{
+  bottom: 5px;
+}
+
+@media only screen and (max-width: 530px) {
+  form{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .incon1{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  input{
+    width: auto;
+  }
+
 }
